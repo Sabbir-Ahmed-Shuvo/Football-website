@@ -1,36 +1,44 @@
 /* ----------------:start-header------------------- */
-body{
+body {
     margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
-header{
-    background-color: blue;
+
+header {
+    background-color: blueviolet;
     width: 100%;
     height: 600px;
+
+
 }
-header:hover{
+
+header:hover {
     background-color: midnightblue;
     transform: scale(1.0);
     transition: 3s ease-in-out;
 }
-.top-bannar{
+
+.top-bannar {
     display: flex;
     align-items: center;
     margin-left: 130px
 }
-.bannar-title{
-  width: 485px;
-  height: 230px;
-  margin-bottom: 50px;
-  text-align: justify;
+
+.bannar-title {
+    width: 485px;
+    height: 230px;
+    margin-bottom: 50px;
+    text-align: justify;
 }
-.bannar-title h1{
-   font-weight: bold;
-   font-size: 56px;
-   line-height: 70px;
-   color: white;
+
+.bannar-title h1 {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 70px;
+    color: white;
 }
-.bannar-title a{
+
+.bannar-title a {
     width: 168px;
     height: 44px;
     background-color: #E02C6D;
@@ -38,68 +46,78 @@ header:hover{
     padding: 10px 40px;
     color: white;
 }
-.bannar-title a:hover{
+
+.bannar-title a:hover {
     background-color: orangered;
     transition: 2s ease;
     transform: scale(1.6);
     border-radius: 10px;
 }
-.bannar-image{
-    width: 556px;
-    height: 438px;
+
+.bannar-title img {
     margin-left: 102px;
     margin-top: 80px;
+    height: 500px;
+    width: 500px;
 }
-.bannar-image img{
-      width: 100%;
-}
+
 /*------------------------ header-end----------------------- */
-.container{
+.container {
     margin-top: 70px;
     width: 900px;
     margin-left: 110px;
-    margin-bottom:27px;
+    margin-bottom: 27px;
 }
-.container-2{
+
+.container-2 {
     margin-top: 27px;
 }
-.container-3{
+
+.container-3 {
     margin-top: 27px;
     margin-bottom: 70px;
 }
-.players{
+
+.players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
-.player{
+
+.player {
     width: 330px;
     height: 474px;
     box-shadow: 10px 10px 40px gray;
     padding: 10px;
 }
-.picture img{
-  width: 100%;  
+
+.picture img {
+    width: 100%;
 }
-.name-title p{
+
+.name-title p {
     color: gray;
 }
+
 /* ------------------top blogs--------------------- */
-.section-title{
+.section-title {
     font-size: 50px;
     text-align: center;
 }
-.top-blogs{
+
+.top-blogs {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
 }
+
 .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
-.blog{
+
+.blog {
     width: 500px;
     height: 130px;
     background-color: white;
@@ -107,62 +125,152 @@ header:hover{
     padding: 5px;
     box-shadow: 10px 10px 40px gray;
 }
-.blog img{
+
+.blog img {
     width: 40%;
 }
-.ditiels{
+
+.ditiels {
     margin-left: 10px;
     line-height: 20px;
 }
+
 .ditiels p {
     color: gray;
 }
+
 /* ----------middle-section----------- */
-.middle-section{
+.middle-section {
     background-image: url(images/football-panorama.jpg);
     height: 500px;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     margin-bottom: 40px;
 }
-.main-div{
+
+.main-div {
     display: flex;
     justify-content: space-around;
     overflow: hidden;
 }
-.ditials{
+
+.ditials {
     width: 400px;
     height: 340px;
     background-color: rgba(255, 255, 255, 0.219);
     margin-top: 70px;
     padding: 10px;
 }
-.ditials img{
+
+.ditials img {
     width: 100%;
 }
-.ditials:hover{
+
+.ditials:hover {
     transform: scale(1.1);
     transition: 2s ease-in-out;
 }
+
 /* --------------------footer----------- */
-footer{
-    width: 480px;
-    height: 213px;
-    margin-left: 440px;
-    margin-top: 100px;
-    margin-bottom: 56px;
-    flex-wrap: wrap;
+footer {
+    height: 200px;
+    text-align: center;
 }
-.logo img{
-    width: 90%;
-    padding-left: 20px;
-}
-.icon, .fab{
+
+
+
+.icon,
+.fab {
     text-align: center;
     padding: 5px;
     color: gray;
 }
-.alart-text p{
-    text-align: center;
-}
+
+
 /* responsive */
+
+@media only screen and (max-width:678px) {
+    header {
+        background-color: whitesmoke;
+        width: 100%;
+        height: auto;
+        padding-bottom: 150px;
+
+
+    }
+
+    .top-bannar {
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+        margin-left: 130px
+    }
+
+    .bannar-title {
+        width: 50%;
+        margin-bottom: 50px;
+        text-align: justify;
+    }
+
+    .bannar-title h1 {
+
+        color: black;
+    }
+
+    .bannar-title img {
+        margin-top: 100px;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 30px;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .middle-section {
+        background-image: url(images/football-panorama.jpg);
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 40px;
+    }
+
+    .main-div {
+        display: inline-block;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    .ditials {
+        width: 400px;
+        height: 340px;
+        background-color: rgba(255, 255, 255, 0.219);
+        margin-top: 70px;
+        padding: 10px;
+        margin-left: 50px;
+    }
+
+
+    footer {
+        width: 480px;
+        height: 213px;
+    }
+
+    .logo img {
+        height: 113px;
+        width: 380px;
+
+    }
+
+
+}

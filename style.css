@@ -1,0 +1,168 @@
+/* ----------------:start-header------------------- */
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: blue;
+    width: 100%;
+    height: 600px;
+}
+header:hover{
+    background-color: midnightblue;
+    transform: scale(1.0);
+    transition: 3s ease-in-out;
+}
+.top-bannar{
+    display: flex;
+    align-items: center;
+    margin-left: 130px
+}
+.bannar-title{
+  width: 485px;
+  height: 230px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+.bannar-title h1{
+   font-weight: bold;
+   font-size: 56px;
+   line-height: 70px;
+   color: white;
+}
+.bannar-title a{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: white;
+}
+.bannar-title a:hover{
+    background-color: orangered;
+    transition: 2s ease;
+    transform: scale(1.6);
+    border-radius: 10px;
+}
+.bannar-image{
+    width: 556px;
+    height: 438px;
+    margin-left: 102px;
+    margin-top: 80px;
+}
+.bannar-image img{
+      width: 100%;
+}
+/*------------------------ header-end----------------------- */
+.container{
+    margin-top: 70px;
+    width: 900px;
+    margin-left: 110px;
+    margin-bottom:27px;
+}
+.container-2{
+    margin-top: 27px;
+}
+.container-3{
+    margin-top: 27px;
+    margin-bottom: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 10px 10px 40px gray;
+    padding: 10px;
+}
+.picture img{
+  width: 100%;  
+}
+.name-title p{
+    color: gray;
+}
+/* ------------------top blogs--------------------- */
+.section-title{
+    font-size: 50px;
+    text-align: center;
+}
+.top-blogs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.blog{
+    width: 500px;
+    height: 130px;
+    background-color: white;
+    display: flex;
+    padding: 5px;
+    box-shadow: 10px 10px 40px gray;
+}
+.blog img{
+    width: 40%;
+}
+.ditiels{
+    margin-left: 10px;
+    line-height: 20px;
+}
+.ditiels p {
+    color: gray;
+}
+/* ----------middle-section----------- */
+.middle-section{
+    background-image: url(images/football-panorama.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 40px;
+}
+.main-div{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.ditials{
+    width: 400px;
+    height: 340px;
+    background-color: rgba(255, 255, 255, 0.219);
+    margin-top: 70px;
+    padding: 10px;
+}
+.ditials img{
+    width: 100%;
+}
+.ditials:hover{
+    transform: scale(1.1);
+    transition: 2s ease-in-out;
+}
+/* --------------------footer----------- */
+footer{
+    width: 480px;
+    height: 213px;
+    margin-left: 440px;
+    margin-top: 100px;
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+}
+.logo img{
+    width: 90%;
+    padding-left: 20px;
+}
+.icon, .fab{
+    text-align: center;
+    padding: 5px;
+    color: gray;
+}
+.alart-text p{
+    text-align: center;
+}
+/* responsive */
